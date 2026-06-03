@@ -1,33 +1,24 @@
-# Hamburger Menu Demo
+**Hamburger Menu & Animated Hero**
 
-This project shows a simple web page with a responsive hamburger menu. It uses HTML and CSS to make the menu change when the browser window is smaller.
+A small CSS-only demo that shows a responsive hamburger menu and an animated hero image.
 
-## What is included
+**Description:**
+- Responsive navigation with a keyboard-focusable hamburger button for small screens (`.hamburger` + `#hamburger`).
+- An animated hero image that moves using the `@keyframes orbit` animation applied to `#div2`.
 
-- `index.html` - the web page structure
-- `style.css` - the styling for the page and hamburger menu
+**Files:**
+- [index.html](index.html)
+- [style.css](style.css)
 
-## What it does
+**Demo / Run**
 
-- displays a navigation menu
-- shows a hamburger icon on smaller screens
-- uses CSS media queries to make the design responsive
+- Quick (no server): Open [index.html](index.html) in your browser.
 
-## How to run
 
-1. Open the project folder in your file explorer.
-2. Double-click `index.html` to open it in your web browser.
+If you use VS Code, install the Live Server extension and click "Go Live".
 
-Or, if you want to use a code editor like VS Code:
+**How it works**
 
-1. Open the folder in VS Code.
-2. Right-click `index.html` and choose `Open with Live Server` if you have the Live Server extension.
-3. If you do not have Live Server, open `index.html` in your browser manually.
+- Hamburger menu: on small screens the `.hamburger` button becomes visible. When the button receives focus the adjacent `#hamburger` menu is shown using the selector `.hamburger:focus ~ #hamburger`.
+- Image animation: the hero image wrapper `#div2` has `animation: orbit 3s linear infinite`, and the `@keyframes orbit` sequence applies rotation, translation and subtle scaling to make the picture move in a circular/orbit-like path.
 
-## Notes
-
-- No installation or server setup is needed.
-- The project runs in any modern web browser.
-
-# humbergur
-Web page using media query and hamberger
